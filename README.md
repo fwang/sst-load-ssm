@@ -1,3 +1,10 @@
+# What does this repo do?
+- It creates an `AuthStack` with a Cognito user pool and an SSM param with the user pool id
+- It then fetches the SSM value for the user pool id
+- It then creates a `WebStack`, currently just `console.log` the user pool id
+
+Note that on when building for the first time (the SSM hasn’t been deployed in the AuthStack), the user pool id defaults to the `placeholder` value.
+
 # Getting Started with Serverless Stack (SST)
 
 This project was bootstrapped with [Create Serverless Stack](https://docs.serverless-stack.com/packages/create-serverless-stack).
